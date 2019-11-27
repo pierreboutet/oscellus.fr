@@ -1,0 +1,16 @@
+---
+layout: default
+title: Oscellus - Les cuvées
+---
+<h1>Les cuvées </h1>
+
+<ul>
+  {% for cuvee in site.cuvees %}
+    <li>
+      <h2><a href="{{ cuvee.url }}">{{ cuvee.name }}</a></h2>
+      <h3>{{ cuvee.date }}</h3>
+      <p>{{ cuvee.description }}</p>
+      <p>{{ cuvee.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,8 @@
+- name: Accueil
+  link: /
+- name: A propos
+  link: /a-propos.html
+- name: Articles
+  link: /articles.html
+- name: Les cuvées
+  link: /les-cuvées.html
