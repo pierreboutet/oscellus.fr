@@ -2,11 +2,11 @@
   link: /
   position: left
 - name: Articles
-  link: /articles.html
+  link: /articles
   position: left
 - name: Les cuvées
-  link: /les-cuvées.html
+  link: /les-cuvées
   position: right
 - name: A propos
-  link: /a-propos.html
+  link: /a-propos
   position: right
