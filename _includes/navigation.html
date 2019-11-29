@@ -1,7 +1,25 @@
-<nav>
-	{% for item in site.data.navigation %}
-	    <a href="{{ item.link }}" class="navlink {% if page.url == item.link %}current{% endif %}">
-	      {{ item.name }}
-	    </a>
-	{% endfor %}
+<nav class="site-header sticky-top py-1">
+	<div class="container d-flex flex-column flex-md-row justify-content-between">
+
+		{% for item in site.data.navigation %}
+
+			{% if item.position == 'left' %}
+			    <a href="{{ item.link }}" class="py-2 d-none d-md-inline-block {% if page.url == item.link %}current{% endif %}">
+			      {{ item.name }}
+			    </a>
+			{% endif %}
+		{% endfor %}
+		<div class="headerLogo-container">
+	        <a class="py-2" href="/">
+	          <img  class="headerLogo" src="/assets/img/logo-oscellus-head.png" alt="Oscellus">
+	        </a>
+    	</div>
+		{% for item in site.data.navigation %}
+			{% if item.position == 'right' %}
+			    <a href="{{ item.link }}" class="py-2 d-none d-md-inline-block {% if page.url == item.link %}current{% endif %}">
+			      {{ item.name }}
+			    </a>
+			{% endif %}
+		{% endfor %}
+    </div>
 </nav>

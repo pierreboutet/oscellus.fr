@@ -1,8 +1,12 @@
 - name: Accueil
   link: /
-- name: A propos
-  link: /a-propos.html
+  position: left
 - name: Articles
   link: /articles.html
+  position: left
 - name: Les cuvées
   link: /les-cuvées.html
+  position: right
+- name: A propos
+  link: /a-propos.html
+  position: right

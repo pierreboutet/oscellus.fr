@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: simplePage
 title: Oscellus - A propos
 ---
 # A propos
 
-Oscellus est une bière artisanale, créé par Pierre Boutet.
+Oscellus.fr est un site en cours de création.
