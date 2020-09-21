@@ -1,3 +1,5 @@
 .saas-cache
 .sass-cache
 _site
+Gemfile
+.idea

@@ -3,19 +3,26 @@ layout: default
 title: Oscellus - Les cuvées
 ---
 
-<p class="teaser"> ... on va parler d'une boisson exceptionnelle.</p>
+<div class="container">
 
-<!--
-<h1>Les cuvées </h1>
+  <h1>Les cuvées </h1>
 
-<ul>
-  {% for cuvee in site.cuvees %}
-    <li>
-      <h2><a href="{{ cuvee.url }}">{{ cuvee.name }}</a></h2>
-      <h3>{{ cuvee.date }}</h3>
-      <p>{{ cuvee.description }}</p>
-      <p>{{ cuvee.content | markdownify }}</p>
-    </li>
-  {% endfor %}
-</ul>
--->
+  <div class="row">
+
+    {% for cuvee in site.cuvees reversed %}
+    <div class="col-md-4">
+      <a href="{{ cuvee.url }}">
+      <div class="cuvee-card">
+        <div class="thumb">
+          <img src='/assets/img/cuvees/{{cuvee.image | default: "default.png"}}'/>
+        </div>
+        <h2>{{ cuvee.name }}</h2>
+        <p class="cuvee-date">{{ cuvee.date_cuvee }}</p>
+        <p>{{ cuvee.description }}</p>
+      </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
